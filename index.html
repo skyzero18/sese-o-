@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Se agregaron los enlaces a las fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jersey+25&display=swap" rel="stylesheet">
+    <!-- Se agregó el enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>FBI</title>
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #000;
+            color: #888;
+            padding: 10px 0;
+        }
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
+        .cookie-banner p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .cookie-banner button {
+            background: linear-gradient(to bottom, #b3a7e7, #6e54e1);
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: #6e54e1;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="dark-theme"> <!-- Se establece el tema oscuro por defecto -->
+    <div class="container">
+        <div class="logo-container">
+            <img src="pngwing.com.png" alt="FBI Logo" class="logo">
+            <div class="title">FBI</div>
+        </div>
+        <div class="subtitle">Classified documents</div>
+        <div class="table-container">
+            <table class="table" id="data">
+                <!-- Aquí se mostrarán los datos de la API -->
+            </table>
+        </div>
+    </div>
+    <button id="theme-toggle" onclick="toggleTheme()" class="theme-toggle">Cambiar tema</button>
+    <!-- Banner de cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Este sitio web utiliza cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web y para proteger la seguridad nacional. Al aceptar las cookies, estás contribuyendo a la lucha contra el crimen y apoyando nuestras investigaciones. ¡Gracias por tu colaboración!</p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+    <!-- Se agregó la referencia al archivo JavaScript -->
+    <script src="script.js"></script>
+    <div class="centrado">
+        <a href="https://www.youtube.com/watch?v=vTUP8eimDuY">No clickear por su salud mental</a>
+    </div>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>¡Juntos por un mundo más seguro! Reporta cualquier actividad sospechosa.</p>
+    </footer>
+</body>
+</html>
